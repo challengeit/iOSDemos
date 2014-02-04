@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C3BDF4B189F11CC00E0F2EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */; };
+		8C3BDF4F189F11CC00E0F2EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4E189F11CC00E0F2EA /* UIKit.framework */; };
+		8C3BDF51189F11CC00E0F2EA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF50189F11CC00E0F2EA /* CoreData.framework */; };
+		8C3BDF57189F11CC00E0F2EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BDF55189F11CC00E0F2EA /* InfoPlist.strings */; };
+		8C3BDF59189F11CC00E0F2EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF58189F11CC00E0F2EA /* main.m */; };
+		8C3BDF5D189F11CC00E0F2EA /* IDKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF5C189F11CC00E0F2EA /* IDKSAppDelegate.m */; };
+		8C3BDF60189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF5E189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld */; };
+		8C3BDF62189F11CC00E0F2EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BDF61189F11CC00E0F2EA /* Images.xcassets */; };
+		8C3BDF69189F11CC00E0F2EA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF68189F11CC00E0F2EA /* XCTest.framework */; };
+		8C3BDF6A189F11CC00E0F2EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */; };
+		8C3BDF6B189F11CC00E0F2EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4E189F11CC00E0F2EA /* UIKit.framework */; };
+		8C3BDF6C189F11CC00E0F2EA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF50189F11CC00E0F2EA /* CoreData.framework */; };
+		8C3BDF74189F11CC00E0F2EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BDF72189F11CC00E0F2EA /* InfoPlist.strings */; };
+		8C3BDF76189F11CC00E0F2EA /* IDKSPaintSharingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF75189F11CC00E0F2EA /* IDKSPaintSharingTests.m */; };
+		8C3BDF80189F121800E0F2EA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF7F189F121800E0F2EA /* Social.framework */; };
+		8C3BDF82189F122B00E0F2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BDF81189F122B00E0F2EA /* Main.storyboard */; };
+		8C3BDF87189F125F00E0F2EA /* IDKSCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF86189F125F00E0F2EA /* IDKSCanvas.m */; };
+		8C3BDF8C189F126600E0F2EA /* IDKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF89189F126600E0F2EA /* IDKSViewController.m */; };
+		8C3BDF8D189F126600E0F2EA /* IDKSShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */; };
+		8C3BDF8F18A072E000E0F2EA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF8E18A072E000E0F2EA /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C3BDF6D189F11CC00E0F2EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C3BDF3F189F11CC00E0F2EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C3BDF46189F11CC00E0F2EA;
+			remoteInfo = IDKSPaintSharing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C3BDF47189F11CC00E0F2EA /* IDKSPaintSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKSPaintSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C3BDF4C189F11CC00E0F2EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C3BDF4E189F11CC00E0F2EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C3BDF50189F11CC00E0F2EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8C3BDF54189F11CC00E0F2EA /* IDKSPaintSharing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDKSPaintSharing-Info.plist"; sourceTree = "<group>"; };
+		8C3BDF56189F11CC00E0F2EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C3BDF58189F11CC00E0F2EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C3BDF5A189F11CC00E0F2EA /* IDKSPaintSharing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDKSPaintSharing-Prefix.pch"; sourceTree = "<group>"; };
+		8C3BDF5B189F11CC00E0F2EA /* IDKSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDKSAppDelegate.h; sourceTree = "<group>"; };
+		8C3BDF5C189F11CC00E0F2EA /* IDKSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDKSAppDelegate.m; sourceTree = "<group>"; };
+		8C3BDF5F189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IDKSPaintSharing.xcdatamodel; sourceTree = "<group>"; };
+		8C3BDF61189F11CC00E0F2EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8C3BDF67189F11CC00E0F2EA /* IDKSPaintSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDKSPaintSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3BDF68189F11CC00E0F2EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8C3BDF71189F11CC00E0F2EA /* IDKSPaintSharingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IDKSPaintSharingTests-Info.plist"; sourceTree = "<group>"; };
+		8C3BDF73189F11CC00E0F2EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C3BDF75189F11CC00E0F2EA /* IDKSPaintSharingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDKSPaintSharingTests.m; sourceTree = "<group>"; };
+		8C3BDF7F189F121800E0F2EA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8C3BDF81189F122B00E0F2EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8C3BDF85189F125F00E0F2EA /* IDKSCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSCanvas.h; sourceTree = "<group>"; };
+		8C3BDF86189F125F00E0F2EA /* IDKSCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSCanvas.m; sourceTree = "<group>"; };
+		8C3BDF88189F126600E0F2EA /* IDKSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSViewController.h; sourceTree = "<group>"; };
+		8C3BDF89189F126600E0F2EA /* IDKSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSViewController.m; sourceTree = "<group>"; };
+		8C3BDF8A189F126600E0F2EA /* IDKSShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSShareViewController.h; sourceTree = "<group>"; };
+		8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSShareViewController.m; sourceTree = "<group>"; };
+		8C3BDF8E18A072E000E0F2EA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C3BDF44189F11CC00E0F2EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF8F18A072E000E0F2EA /* MessageUI.framework in Frameworks */,
+				8C3BDF80189F121800E0F2EA /* Social.framework in Frameworks */,
+				8C3BDF51189F11CC00E0F2EA /* CoreData.framework in Frameworks */,
+				8C3BDF4F189F11CC00E0F2EA /* UIKit.framework in Frameworks */,
+				8C3BDF4B189F11CC00E0F2EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3BDF64189F11CC00E0F2EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF69189F11CC00E0F2EA /* XCTest.framework in Frameworks */,
+				8C3BDF6C189F11CC00E0F2EA /* CoreData.framework in Frameworks */,
+				8C3BDF6B189F11CC00E0F2EA /* UIKit.framework in Frameworks */,
+				8C3BDF6A189F11CC00E0F2EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C3BDF3E189F11CC00E0F2EA = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF52189F11CC00E0F2EA /* IDKSPaintSharing */,
+				8C3BDF6F189F11CC00E0F2EA /* IDKSPaintSharingTests */,
+				8C3BDF49189F11CC00E0F2EA /* Frameworks */,
+				8C3BDF48189F11CC00E0F2EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C3BDF48189F11CC00E0F2EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF47189F11CC00E0F2EA /* IDKSPaintSharing.app */,
+				8C3BDF67189F11CC00E0F2EA /* IDKSPaintSharingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3BDF49189F11CC00E0F2EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF8E18A072E000E0F2EA /* MessageUI.framework */,
+				8C3BDF7F189F121800E0F2EA /* Social.framework */,
+				8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */,
+				8C3BDF4C189F11CC00E0F2EA /* CoreGraphics.framework */,
+				8C3BDF4E189F11CC00E0F2EA /* UIKit.framework */,
+				8C3BDF50189F11CC00E0F2EA /* CoreData.framework */,
+				8C3BDF68189F11CC00E0F2EA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C3BDF52189F11CC00E0F2EA /* IDKSPaintSharing */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF61189F11CC00E0F2EA /* Images.xcassets */,
+				8C3BDF81189F122B00E0F2EA /* Main.storyboard */,
+				8C3BDF5E189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld */,
+				8C3BDF5B189F11CC00E0F2EA /* IDKSAppDelegate.h */,
+				8C3BDF5C189F11CC00E0F2EA /* IDKSAppDelegate.m */,
+				8C3BDF84189F125400E0F2EA /* Controllers */,
+				8C3BDF83189F124A00E0F2EA /* Views */,
+				8C3BDF53189F11CC00E0F2EA /* Supporting Files */,
+			);
+			path = IDKSPaintSharing;
+			sourceTree = "<group>";
+		};
+		8C3BDF53189F11CC00E0F2EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF54189F11CC00E0F2EA /* IDKSPaintSharing-Info.plist */,
+				8C3BDF55189F11CC00E0F2EA /* InfoPlist.strings */,
+				8C3BDF58189F11CC00E0F2EA /* main.m */,
+				8C3BDF5A189F11CC00E0F2EA /* IDKSPaintSharing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C3BDF6F189F11CC00E0F2EA /* IDKSPaintSharingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF75189F11CC00E0F2EA /* IDKSPaintSharingTests.m */,
+				8C3BDF70189F11CC00E0F2EA /* Supporting Files */,
+			);
+			path = IDKSPaintSharingTests;
+			sourceTree = "<group>";
+		};
+		8C3BDF70189F11CC00E0F2EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF71189F11CC00E0F2EA /* IDKSPaintSharingTests-Info.plist */,
+				8C3BDF72189F11CC00E0F2EA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C3BDF83189F124A00E0F2EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF85189F125F00E0F2EA /* IDKSCanvas.h */,
+				8C3BDF86189F125F00E0F2EA /* IDKSCanvas.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C3BDF84189F125400E0F2EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C3BDF88189F126600E0F2EA /* IDKSViewController.h */,
+				8C3BDF89189F126600E0F2EA /* IDKSViewController.m */,
+				8C3BDF8A189F126600E0F2EA /* IDKSShareViewController.h */,
+				8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C3BDF46189F11CC00E0F2EA /* IDKSPaintSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3BDF79189F11CC00E0F2EA /* Build configuration list for PBXNativeTarget "IDKSPaintSharing" */;
+			buildPhases = (
+				8C3BDF43189F11CC00E0F2EA /* Sources */,
+				8C3BDF44189F11CC00E0F2EA /* Frameworks */,
+				8C3BDF45189F11CC00E0F2EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDKSPaintSharing;
+			productName = IDKSPaintSharing;
+			productReference = 8C3BDF47189F11CC00E0F2EA /* IDKSPaintSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C3BDF66189F11CC00E0F2EA /* IDKSPaintSharingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3BDF7C189F11CC00E0F2EA /* Build configuration list for PBXNativeTarget "IDKSPaintSharingTests" */;
+			buildPhases = (
+				8C3BDF63189F11CC00E0F2EA /* Sources */,
+				8C3BDF64189F11CC00E0F2EA /* Frameworks */,
+				8C3BDF65189F11CC00E0F2EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C3BDF6E189F11CC00E0F2EA /* PBXTargetDependency */,
+			);
+			name = IDKSPaintSharingTests;
+			productName = IDKSPaintSharingTests;
+			productReference = 8C3BDF67189F11CC00E0F2EA /* IDKSPaintSharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C3BDF3F189F11CC00E0F2EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IDKS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = challenge_it;
+				TargetAttributes = {
+					8C3BDF66189F11CC00E0F2EA = {
+						TestTargetID = 8C3BDF46189F11CC00E0F2EA;
+					};
+				};
+			};
+			buildConfigurationList = 8C3BDF42189F11CC00E0F2EA /* Build configuration list for PBXProject "IDKSPaintSharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C3BDF3E189F11CC00E0F2EA;
+			productRefGroup = 8C3BDF48189F11CC00E0F2EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C3BDF46189F11CC00E0F2EA /* IDKSPaintSharing */,
+				8C3BDF66189F11CC00E0F2EA /* IDKSPaintSharingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C3BDF45189F11CC00E0F2EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF82189F122B00E0F2EA /* Main.storyboard in Resources */,
+				8C3BDF57189F11CC00E0F2EA /* InfoPlist.strings in Resources */,
+				8C3BDF62189F11CC00E0F2EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3BDF65189F11CC00E0F2EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF74189F11CC00E0F2EA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C3BDF43189F11CC00E0F2EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF60189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld in Sources */,
+				8C3BDF59189F11CC00E0F2EA /* main.m in Sources */,
+				8C3BDF87189F125F00E0F2EA /* IDKSCanvas.m in Sources */,
+				8C3BDF5D189F11CC00E0F2EA /* IDKSAppDelegate.m in Sources */,
+				8C3BDF8C189F126600E0F2EA /* IDKSViewController.m in Sources */,
+				8C3BDF8D189F126600E0F2EA /* IDKSShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3BDF63189F11CC00E0F2EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3BDF76189F11CC00E0F2EA /* IDKSPaintSharingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C3BDF6E189F11CC00E0F2EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C3BDF46189F11CC00E0F2EA /* IDKSPaintSharing */;
+			targetProxy = 8C3BDF6D189F11CC00E0F2EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C3BDF55189F11CC00E0F2EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3BDF56189F11CC00E0F2EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C3BDF72189F11CC00E0F2EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3BDF73189F11CC00E0F2EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C3BDF77189F11CC00E0F2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C3BDF78189F11CC00E0F2EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C3BDF7A189F11CC00E0F2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
+				INFOPLIST_FILE = "IDKSPaintSharing/IDKSPaintSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C3BDF7B189F11CC00E0F2EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
+				INFOPLIST_FILE = "IDKSPaintSharing/IDKSPaintSharing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8C3BDF7D189F11CC00E0F2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDKSPaintSharing.app/IDKSPaintSharing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IDKSPaintSharingTests/IDKSPaintSharingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8C3BDF7E189F11CC00E0F2EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IDKSPaintSharing.app/IDKSPaintSharing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
+				INFOPLIST_FILE = "IDKSPaintSharingTests/IDKSPaintSharingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C3BDF42189F11CC00E0F2EA /* Build configuration list for PBXProject "IDKSPaintSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3BDF77189F11CC00E0F2EA /* Debug */,
+				8C3BDF78189F11CC00E0F2EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3BDF79189F11CC00E0F2EA /* Build configuration list for PBXNativeTarget "IDKSPaintSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3BDF7A189F11CC00E0F2EA /* Debug */,
+				8C3BDF7B189F11CC00E0F2EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C3BDF7C189F11CC00E0F2EA /* Build configuration list for PBXNativeTarget "IDKSPaintSharingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3BDF7D189F11CC00E0F2EA /* Debug */,
+				8C3BDF7E189F11CC00E0F2EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C3BDF5E189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C3BDF5F189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodel */,
+			);
+			currentVersion = 8C3BDF5F189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodel */;
+			path = IDKSPaintSharing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C3BDF3F189F11CC00E0F2EA /* Project object */;
+}
