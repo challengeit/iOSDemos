@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Draw" representedClassName="Draw" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="paths" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Path" inverseName="draw" inverseEntity="Path" syncable="YES"/>
+    </entity>
+    <entity name="Path" representedClassName="Path" syncable="YES">
+        <attribute name="bezierPath" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="draw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Draw" inverseName="paths" inverseEntity="Draw" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Path" positionX="160" positionY="192" width="128" height="88"/>
+        <element name="Draw" positionX="387" positionY="207" width="128" height="73"/>
+    </elements>
 </model>
