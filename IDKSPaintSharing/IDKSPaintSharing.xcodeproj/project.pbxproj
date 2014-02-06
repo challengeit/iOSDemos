@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8C046D2C18A2CC0200F525D5 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C046D2B18A2CC0200F525D5 /* Path.m */; };
 		8C046D2F18A2CC0300F525D5 /* Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C046D2E18A2CC0300F525D5 /* Draw.m */; };
+		8C046D3218A2F8FC00F525D5 /* Draw+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C046D3118A2F8FC00F525D5 /* Draw+CRUD.m */; };
+		8C046D3518A2FD4700F525D5 /* Path+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C046D3418A2FD4700F525D5 /* Path+CRUD.m */; };
+		8C046D3E18A3035100F525D5 /* IDKSDrawsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C046D3D18A3035100F525D5 /* IDKSDrawsViewController.m */; };
 		8C3BDF4B189F11CC00E0F2EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */; };
 		8C3BDF4F189F11CC00E0F2EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF4E189F11CC00E0F2EA /* UIKit.framework */; };
 		8C3BDF51189F11CC00E0F2EA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF50189F11CC00E0F2EA /* CoreData.framework */; };
@@ -26,7 +29,7 @@
 		8C3BDF80189F121800E0F2EA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF7F189F121800E0F2EA /* Social.framework */; };
 		8C3BDF82189F122B00E0F2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BDF81189F122B00E0F2EA /* Main.storyboard */; };
 		8C3BDF87189F125F00E0F2EA /* IDKSCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF86189F125F00E0F2EA /* IDKSCanvas.m */; };
-		8C3BDF8C189F126600E0F2EA /* IDKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF89189F126600E0F2EA /* IDKSViewController.m */; };
+		8C3BDF8C189F126600E0F2EA /* IDKSPaintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF89189F126600E0F2EA /* IDKSPaintViewController.m */; };
 		8C3BDF8D189F126600E0F2EA /* IDKSShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */; };
 		8C3BDF8F18A072E000E0F2EA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BDF8E18A072E000E0F2EA /* MessageUI.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,12 @@
 		8C046D2B18A2CC0200F525D5 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
 		8C046D2D18A2CC0300F525D5 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Draw.h; sourceTree = "<group>"; };
 		8C046D2E18A2CC0300F525D5 /* Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Draw.m; sourceTree = "<group>"; };
+		8C046D3018A2F8FC00F525D5 /* Draw+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Draw+CRUD.h"; sourceTree = "<group>"; };
+		8C046D3118A2F8FC00F525D5 /* Draw+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Draw+CRUD.m"; sourceTree = "<group>"; };
+		8C046D3318A2FD4700F525D5 /* Path+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Path+CRUD.h"; sourceTree = "<group>"; };
+		8C046D3418A2FD4700F525D5 /* Path+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Path+CRUD.m"; sourceTree = "<group>"; };
+		8C046D3C18A3035100F525D5 /* IDKSDrawsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSDrawsViewController.h; sourceTree = "<group>"; };
+		8C046D3D18A3035100F525D5 /* IDKSDrawsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSDrawsViewController.m; sourceTree = "<group>"; };
 		8C3BDF47189F11CC00E0F2EA /* IDKSPaintSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKSPaintSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3BDF4A189F11CC00E0F2EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C3BDF4C189F11CC00E0F2EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,8 +77,8 @@
 		8C3BDF81189F122B00E0F2EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8C3BDF85189F125F00E0F2EA /* IDKSCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSCanvas.h; sourceTree = "<group>"; };
 		8C3BDF86189F125F00E0F2EA /* IDKSCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSCanvas.m; sourceTree = "<group>"; };
-		8C3BDF88189F126600E0F2EA /* IDKSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSViewController.h; sourceTree = "<group>"; };
-		8C3BDF89189F126600E0F2EA /* IDKSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSViewController.m; sourceTree = "<group>"; };
+		8C3BDF88189F126600E0F2EA /* IDKSPaintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSPaintViewController.h; sourceTree = "<group>"; };
+		8C3BDF89189F126600E0F2EA /* IDKSPaintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSPaintViewController.m; sourceTree = "<group>"; };
 		8C3BDF8A189F126600E0F2EA /* IDKSShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSShareViewController.h; sourceTree = "<group>"; };
 		8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSShareViewController.m; sourceTree = "<group>"; };
 		8C3BDF8E18A072E000E0F2EA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -105,6 +114,10 @@
 		8C046D2918A2CB4700F525D5 /* managedObjects */ = {
 			isa = PBXGroup;
 			children = (
+				8C046D3018A2F8FC00F525D5 /* Draw+CRUD.h */,
+				8C046D3118A2F8FC00F525D5 /* Draw+CRUD.m */,
+				8C046D3318A2FD4700F525D5 /* Path+CRUD.h */,
+				8C046D3418A2FD4700F525D5 /* Path+CRUD.m */,
 				8C046D2D18A2CC0300F525D5 /* Draw.h */,
 				8C046D2E18A2CC0300F525D5 /* Draw.m */,
 				8C046D2A18A2CC0200F525D5 /* Path.h */,
@@ -152,9 +165,9 @@
 				8C3BDF61189F11CC00E0F2EA /* Images.xcassets */,
 				8C3BDF81189F122B00E0F2EA /* Main.storyboard */,
 				8C3BDF5E189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld */,
-				8C046D2918A2CB4700F525D5 /* managedObjects */,
 				8C3BDF5B189F11CC00E0F2EA /* IDKSAppDelegate.h */,
 				8C3BDF5C189F11CC00E0F2EA /* IDKSAppDelegate.m */,
+				8C046D2918A2CB4700F525D5 /* managedObjects */,
 				8C3BDF84189F125400E0F2EA /* controllers */,
 				8C3BDF83189F124A00E0F2EA /* views */,
 				8C3BDF53189F11CC00E0F2EA /* Supporting Files */,
@@ -203,8 +216,10 @@
 		8C3BDF84189F125400E0F2EA /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C3BDF88189F126600E0F2EA /* IDKSViewController.h */,
-				8C3BDF89189F126600E0F2EA /* IDKSViewController.m */,
+				8C046D3C18A3035100F525D5 /* IDKSDrawsViewController.h */,
+				8C046D3D18A3035100F525D5 /* IDKSDrawsViewController.m */,
+				8C3BDF88189F126600E0F2EA /* IDKSPaintViewController.h */,
+				8C3BDF89189F126600E0F2EA /* IDKSPaintViewController.m */,
 				8C3BDF8A189F126600E0F2EA /* IDKSShareViewController.h */,
 				8C3BDF8B189F126600E0F2EA /* IDKSShareViewController.m */,
 			);
@@ -308,12 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C046D3E18A3035100F525D5 /* IDKSDrawsViewController.m in Sources */,
 				8C3BDF60189F11CC00E0F2EA /* IDKSPaintSharing.xcdatamodeld in Sources */,
 				8C3BDF59189F11CC00E0F2EA /* main.m in Sources */,
 				8C3BDF87189F125F00E0F2EA /* IDKSCanvas.m in Sources */,
 				8C3BDF5D189F11CC00E0F2EA /* IDKSAppDelegate.m in Sources */,
-				8C3BDF8C189F126600E0F2EA /* IDKSViewController.m in Sources */,
+				8C3BDF8C189F126600E0F2EA /* IDKSPaintViewController.m in Sources */,
 				8C3BDF8D189F126600E0F2EA /* IDKSShareViewController.m in Sources */,
+				8C046D3518A2FD4700F525D5 /* Path+CRUD.m in Sources */,
+				8C046D3218A2F8FC00F525D5 /* Draw+CRUD.m in Sources */,
 				8C046D2C18A2CC0200F525D5 /* Path.m in Sources */,
 				8C046D2F18A2CC0300F525D5 /* Draw.m in Sources */,
 			);
