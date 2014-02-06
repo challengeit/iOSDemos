@@ -49,12 +49,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     NSError *error;
     BOOL fetch = [self.controller performFetch:&error];
     
     if (error || !fetch)
         NSLog(@"ERROR PERFORMING FETCH IN DRAWS TABLE VIEW: %@", error.localizedDescription);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -81,9 +86,15 @@
     if (cell == nil)
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
     Draw *draw = [self.controller objectAtIndexPath:indexPath];
     cell.textLabel.text = draw.name;
-    return cell;
+    cell.textLabel.textColor = [UIColor redColor];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -130,7 +141,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self tableView:self.tableView cellForRowAtIndexPath:indexPath];
+            [self configureCell:[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:

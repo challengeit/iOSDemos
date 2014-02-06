@@ -174,7 +174,6 @@
 - (void)saveAction
 {
     // If the draw have a name, so it's for update.
-    NSLog(@"%@", self.navigationItem.title);
     if (![self.navigationItem.title isEqualToString:@"Paint"])
     {
         [self saveInDB:self.navigationItem.title];
