@@ -10,7 +10,7 @@
         <relationship name="draw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Draw" inverseName="paths" inverseEntity="Draw" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Path" positionX="160" positionY="192" width="128" height="88"/>
-        <element name="Draw" positionX="387" positionY="207" width="128" height="73"/>
+        <element name="Draw" positionX="351" positionY="207" width="128" height="73"/>
+        <element name="Path" positionX="117" positionY="192" width="128" height="88"/>
     </elements>
 </model>

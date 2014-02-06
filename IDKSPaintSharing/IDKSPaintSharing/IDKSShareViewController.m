@@ -13,6 +13,8 @@
 
 typedef void (^Share)(UIImage *);
 
+typedef void (*FShare)(UIImage *);
+
 /*!
  @discussion Definition of the class extension for IDKSShareViewController.
  */
@@ -25,7 +27,36 @@ typedef void (^Share)(UIImage *);
 @implementation IDKSShareViewController
 
 /*!
- @discussion Getter method for shares array. Contains the blocks 
+ @discussion Helper method for post the image in the desire social network.
+ @param serviceName The name of the social network service.
+ @return One Share block.
+ */
+- (Share)postInSocialNetwork:(NSString *)serviceName
+{
+    Share s = ^(UIImage *draw) {
+        if (![SLComposeViewController isAvailableForServiceType:serviceName])
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:[NSString stringWithFormat:@"please configure your %@ account in the settings", serviceName] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+        
+        SLComposeViewController *compose = [SLComposeViewController composeViewControllerForServiceType:serviceName];
+        [compose setInitialText:@"DEBUG MODE..."];
+        [compose addImage:draw];
+        compose.completionHandler = ^(SLComposeViewControllerResult result)
+        {
+            NSLog(@"%@", (result == SLComposeViewControllerResultDone)? @"Posted." : @"Not Posted.");
+        };
+        
+        [self presentViewController:compose animated:YES completion:nil];
+    };
+    
+    return s;
+}
+
+/*!
+ @discussion Getter method for shares array. Contains the blocks
  for execute each share action. Note that the order in array is important!
  @return The shares array instance.
  */
@@ -33,54 +64,14 @@ typedef void (^Share)(UIImage *);
 {
     if (!_shares)
     {
-        _shares = @[^(UIImage *draw)
-                     {
+        _shares = @[^(UIImage *draw) {
                          // Save draw in photo album.
                          UIImageWriteToSavedPhotosAlbum(draw, nil, nil, nil);
                          NSLog(@"Saved in Photos.");
                      },
-                    ^(UIImage *draw)
-                     {
-                         // Try post in Facebook.
-                         if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
-                         {
-                             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:@"please configure your FB account in the settings" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                             [alert show];
-                             return;
-                         }
-                         
-                         SLComposeViewController *fbCompose = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-                         [fbCompose setInitialText:@"DEBUG MODE..."];
-                         [fbCompose addImage:draw];
-                         fbCompose.completionHandler = ^(SLComposeViewControllerResult result)
-                         {
-                             NSLog(@"%@", (result == SLComposeViewControllerResultDone)? @"Posted in FB." : @"Not Posted in FB.");
-                         };
-                         
-                         [self presentViewController:fbCompose animated:YES completion:nil];
-                     },
-                     ^(UIImage *draw)
-                     {
-                         // Try post in Twitter.
-                         if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
-                         {
-                             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:@"please configure your Twitter account in the settings" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                             [alert show];
-                             return;
-                         }
-                         
-                         SLComposeViewController *twitterCompose = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-                         [twitterCompose setInitialText:@"DEBUG MODE..."];
-                         [twitterCompose addImage:draw];
-                         twitterCompose.completionHandler = ^(SLComposeViewControllerResult result)
-                         {
-                             NSLog(@"%@", (result == SLComposeViewControllerResultDone)? @"Posted in Twitter." : @"Not Posted in Twitter.");
-                         };
-
-                         [self presentViewController:twitterCompose animated:YES completion:nil];
-                     },
-                     ^(UIImage *draw)
-                     {
+                     [self postInSocialNetwork:SLServiceTypeFacebook],
+                     [self postInSocialNetwork:SLServiceTypeTwitter],
+                     ^(UIImage *draw) {
                          // Send an e-mail with the draw.
                          MFMailComposeViewController *mailcontroller = [[MFMailComposeViewController alloc] init];
                          [mailcontroller setMailComposeDelegate:self];
