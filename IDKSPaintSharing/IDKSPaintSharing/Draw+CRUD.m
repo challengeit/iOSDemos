@@ -38,4 +38,13 @@
     return ([matches count])? [matches firstObject] : nil;
 }
 
++ (void)deleteDraw:(Draw *)draw inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    [context deleteObject:draw];
+    NSError *error;
+    [context save:&error];
+    if (error)
+        NSLog(@"ERROR DELETE DRAW: %@", error.localizedDescription);
+}
+
 @end

@@ -26,8 +26,16 @@
  @discussion Read operation.
  @param name    The unique name of the draw.
  @param context The managed object context (DB).
+ @return The draw.
  */
 + (Draw *)readByName:(NSString *)name inManagedObjectContext:(NSManagedObjectContext *)context;
+
+/*!
+ @discussion Delete operation.
+ @param draw    The draw for delete.
+ @param context The managed object context (DB).
+ */
++ (void)deleteDraw:(Draw *)draw inManagedObjectContext:(NSManagedObjectContext *)context;
 
 // TODO: implement the other operations.
 

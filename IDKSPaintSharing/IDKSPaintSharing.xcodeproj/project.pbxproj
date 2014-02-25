@@ -274,6 +274,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = challenge_it;
 				TargetAttributes = {
+					8C3BDF46189F11CC00E0F2EA = {
+						DevelopmentTeam = ZLMWPY66V7;
+					};
 					8C3BDF66189F11CC00E0F2EA = {
 						TestTargetID = 8C3BDF46189F11CC00E0F2EA;
 					};
@@ -452,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
 				INFOPLIST_FILE = "IDKSPaintSharing/IDKSPaintSharing-Info.plist";
@@ -465,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IDKSPaintSharing/IDKSPaintSharing-Prefix.pch";
 				INFOPLIST_FILE = "IDKSPaintSharing/IDKSPaintSharing-Info.plist";

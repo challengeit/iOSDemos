@@ -315,7 +315,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Draws" id="ciw-3B-STL">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="HTF-ca-ByA">
+                        <barButtonItem key="leftBarButtonItem" title="New" id="HTF-ca-ByA">
                             <connections>
                                 <segue destination="Cnr-pt-PHc" kind="push" id="ADR-fs-xvm"/>
                             </connections>
