@@ -57,7 +57,7 @@
         NSLog(@"ERROR PERFORMING FETCH IN DRAWS TABLE VIEW: %@", error.localizedDescription);
     
     // Edit table.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated

@@ -10,6 +10,7 @@
 #import "IDKSShareViewController.h"
 #import "IDKSCanvas.h"
 #import "Path+CRUD.h"
+#import "Draw+CRUD.h"
 #import "IDKSAppDelegate.h"
 #import "Draw.h"
 
@@ -206,11 +207,34 @@
  */
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    if (alertView.tag == 1)
+    {
+        [self saveAction];
+        return;
+    }
+    
     if (buttonIndex == 0)
         return;
     
-    // Create in DB.
-    [self saveInDB: [[alertView textFieldAtIndex:0] text]];
+    NSString *drawName = [[alertView textFieldAtIndex:0] text];
+    
+    // First verify if already exists.
+    IDKSAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    [app.managedObjectContext performBlock:^{
+        if ([Draw readByName:drawName inManagedObjectContext:app.managedObjectContext] != nil)
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // Alert the user.
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Attention" message:[NSString stringWithFormat:@"Already exists one draw with the name: %@", drawName] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                alert.tag = 1;
+                
+                [alert show];
+            });
+        }
+        else
+            // Create in DB.
+            [self saveInDB: drawName];
+    }];
 }
 
 /*!
@@ -220,10 +244,12 @@
 - (void)saveInDB:(NSString *)drawName
 {
     IDKSAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    
     [app.managedObjectContext performBlock:^{
+        
         for (Pair *pair in self.paths)
             [Path createWithBezierPath:pair.bezierPath color:pair.color andDrawName:drawName inManagedObjectContext:app.managedObjectContext];
-        
+            
         NSError *error;
         [app.managedObjectContext save:&error];
         if (error)
