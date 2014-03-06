@@ -1,0 +1,3 @@
+platform :ios, '7.0'
+xcodeproj 'IDKSWeather.xcodeproj'
+pod 'AFNetworking', '~> 2.2'

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="IDKSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iuj-Pd-GKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="TNu-3O-AC4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-D1-LlJ">
+                                <rect key="frame" x="20" y="96" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="city name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cur-GR-CT9">
+                                <rect key="frame" x="20" y="154" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJz-L4-raq">
+                                <rect key="frame" x="20" y="230" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="xCI-Vl-1Kd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69M-ju-8e5">
+                                <rect key="frame" x="108" y="192" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="r2e-xq-UKU"/>
+                                </constraints>
+                                <state key="normal" title="Get">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeather:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Iic-Sg-vb6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMh-i4-UVH">
+                                <rect key="frame" x="146" y="192" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get-AFN">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeatherAFN:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SXJ-46-wry"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-k7-LVT">
+                                <rect key="frame" x="20" y="400" width="280" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="yUr-Ob-RDf"/>
+                                </constraints>
+                                <string key="text">dummy example for demonstrate the usage of NSURLConnection object and AFNetworking framework for make an HTTP request. In this example the request is for get the current city's weather from http://api.openweathermap.org.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CIT_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XLm-1d-jcy">
+                                <rect key="frame" x="232" y="499" width="55" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="gQf-2h-nha"/>
+                                    <constraint firstAttribute="width" constant="55" id="kJy-9s-3Hz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JGf-D1-LlJ" firstAttribute="trailing" secondItem="69M-ju-8e5" secondAttribute="trailing" constant="162" id="2za-Dg-iC8"/>
+                            <constraint firstItem="TNu-3O-AC4" firstAttribute="top" secondItem="OSJ-k7-LVT" secondAttribute="bottom" constant="77" id="9S4-Wu-bMJ"/>
+                            <constraint firstItem="cur-GR-CT9" firstAttribute="top" secondItem="JGf-D1-LlJ" secondAttribute="bottom" constant="37" id="ANT-1t-9zz"/>
+                            <constraint firstItem="JGf-D1-LlJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="ErB-Ua-l3T"/>
+                            <constraint firstItem="NJz-L4-raq" firstAttribute="leading" secondItem="OSJ-k7-LVT" secondAttribute="leading" id="GEB-u0-ofl"/>
+                            <constraint firstItem="JGf-D1-LlJ" firstAttribute="top" secondItem="Iuj-Pd-GKL" secondAttribute="bottom" constant="76" id="Kag-Ne-bvS"/>
+                            <constraint firstItem="NJz-L4-raq" firstAttribute="leading" secondItem="cur-GR-CT9" secondAttribute="leading" id="N7M-5d-qi5"/>
+                            <constraint firstItem="OSJ-k7-LVT" firstAttribute="trailing" secondItem="XLm-1d-jcy" secondAttribute="trailing" constant="13" id="S8Z-AR-JTm"/>
+                            <constraint firstAttribute="trailing" secondItem="JGf-D1-LlJ" secondAttribute="trailing" constant="20" symbolic="YES" id="XJZ-zn-2FS"/>
+                            <constraint firstItem="NJz-L4-raq" firstAttribute="trailing" secondItem="OSJ-k7-LVT" secondAttribute="trailing" id="YyZ-yB-zUF"/>
+                            <constraint firstItem="NJz-L4-raq" firstAttribute="top" secondItem="cur-GR-CT9" secondAttribute="bottom" constant="46" id="dJL-fa-xdD"/>
+                            <constraint firstItem="JGf-D1-LlJ" firstAttribute="leading" secondItem="cur-GR-CT9" secondAttribute="leading" id="kwf-bN-foN"/>
+                            <constraint firstItem="cur-GR-CT9" firstAttribute="top" secondItem="69M-ju-8e5" secondAttribute="top" constant="-38" id="nPS-py-gsN"/>
+                            <constraint firstItem="NJz-L4-raq" firstAttribute="trailing" secondItem="69M-ju-8e5" secondAttribute="trailing" constant="162" id="pW3-7n-w01"/>
+                            <constraint firstItem="69M-ju-8e5" firstAttribute="leading" secondItem="cur-GR-CT9" secondAttribute="trailing" constant="-192" id="tCs-4L-Vud"/>
+                            <constraint firstAttribute="bottom" secondItem="XLm-1d-jcy" secondAttribute="bottom" constant="20" symbolic="YES" id="wNC-so-si9"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="cur-GR-CT9" id="k7p-fn-2Ft"/>
+                        <outlet property="weatherLabel" destination="NJz-L4-raq" id="Bz8-mq-aaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CIT_logo" width="659" height="577"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
